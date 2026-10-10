@@ -45,6 +45,10 @@ boba-quiz/
 
 No additional dependencies or installations are required.
 
+## 🖼️ Image Credits
+
+All illustrations by upklyak on Magnific (https://www.magnific.com/author/upklyak).
+
 ## 👩‍💻 Author
 
 Created as a fun front-end web development project to practice HTML, CSS, and JavaScript.

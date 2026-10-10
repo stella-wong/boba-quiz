@@ -2,23 +2,35 @@ const questions = [
   {
     question: "What's your ideal day off?",
     answers: [
-      { text: "Going on a spontaneous adventure with friends", result: "thai" },
+      {
+        text: "Going on a spontaneous adventure with friends",
+        result: "thai",
+        image: "images/adventure.jpg",
+      },
       {
         text: "Staying in bed and having a cozy movie day",
         result: "brownSugar",
+        image: "images/cozyBed.jpg",
       },
       {
         text: "Visiting a cute café and browsing little shops",
         result: "matcha",
+        image: "images/cuteCafe.jpg",
       },
       {
         text: "Baking something cute or doing arts and crafts",
         result: "taro",
+        image: "images/baking.jpg",
       },
-      { text: "Having a picnic and taking cute photos", result: "strawberry" },
+      {
+        text: "Having a picnic and taking cute photos",
+        result: "strawberry",
+        image: "images/picnic.jpg",
+      },
       {
         text: "Catching up with friends at your favorite spot",
         result: "classic",
+        image: "images/bookstore.jpg",
       },
     ],
   },
@@ -260,7 +272,18 @@ function showQuestion() {
     const button = document.createElement("button");
 
     button.className = "answer-option";
-    button.textContent = answer.text;
+    button.setAttribute("aria-pressed", "false");
+
+    // Answer option text
+    const text = document.createElement("span");
+    text.textContent = answer.text;
+    button.appendChild(text);
+
+    // Answer option image
+    const img = document.createElement("img");
+    img.src = answer.image;
+    img.alt = answer.text;
+    button.appendChild(img);
 
     button.addEventListener("click", () => {
       // Select one answer at a time
@@ -278,7 +301,6 @@ function showQuestion() {
       nextBtn.disabled = false;
     });
 
-    button.setAttribute("aria-pressed", "false");
     answerOptions.appendChild(button);
   });
 
