@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What Boba Drink Are You?</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="quiz-container">
+      <!-- Welcome screen -->
+      <section id="welcome-screen" class="screen">
+        <p class="eyebrow">A LITTLE PERSONALITY QUIZ</p>
+        <h1>What Boba Drink Are You? 🧋</h1>
+        <p>Answer a few fun questions to discover your boba personality!</p>
+        <button id="start-btn">Let's find out!</button>
+      </section>
+
+      <!-- Question screen -->
+      <section id="quiz-screen" class="screen hidden">
+        <div class="progress-info">
+          <span id="question-count"></span>
+          <span id="progress-percent"></span>
+        </div>
+
+        <div class="progress-track">
+          <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <div id="answer-options" class="answer-options"></div>
+
+        <button id="next-btn" disabled>Next →</button>
+      </section>
+
+      <!-- Results screen -->
+      <section id="result-screen" class="screen hidden">
+        <p class="eyebrow">YOUR BOBA PERSONALITY IS...</p>
+        <div id="result-emoji" class="result-emoji"></div>
+        <h2 id="result-title"></h2>
+        <p id="result-description"></p>
+        <button id="restart-btn">Take the quiz again</button>
+      </section>
+    </main>
+  </body>
+</html>
