@@ -81,8 +81,7 @@ button:disabled {
 }
 
 #welcome-screen button,
-#restart-btn,
-#next-btn {
+#restart-btn {
   margin-top: 28px;
 }
 

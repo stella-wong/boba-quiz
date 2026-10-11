@@ -25,26 +25,6 @@ A fun, interactive personality quiz inspired by BuzzFeed-style quizzes! Answer a
 - **CSS3** — Styling, layout, and responsive design
 - **JavaScript** — Quiz logic, answer tracking, scoring, and result generation
 
-## 📁 Project Structure
-
-```text
-boba-quiz/
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-    └── images/
-```
-
-## 🚀 Getting Started
-
-1. Clone or download this repository.
-2. Open the project folder in your code editor.
-3. Open `index.html` in your browser, or use the VS Code Live Server extension.
-4. Click **Let's find out!** and take the quiz.
-
-No additional dependencies or installations are required.
-
 ## 🖼️ Image Credits
 
 All illustrations by upklyak on Magnific (https://www.magnific.com/author/upklyak).
@@ -55,4 +35,4 @@ Created as a fun front-end web development project to practice HTML, CSS, and Ja
 
 ---
 
-_Which boba drink matches your personality? Take the quiz and find out!_ 💗
+_Which boba drink matches your personality? Take the quiz (https://stellayuwong.github.io/boba-quiz/) and find out!_ 💗

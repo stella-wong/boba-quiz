@@ -3,11 +3,6 @@ const questions = [
     question: "What's your ideal day off?",
     answers: [
       {
-        text: "Going on a spontaneous adventure with friends",
-        result: "thai",
-        image: "images/adventure.jpg",
-      },
-      {
         text: "Staying in bed and having a cozy movie day",
         result: "brownSugar",
         image: "images/cozyBed.jpg",
@@ -23,14 +18,19 @@ const questions = [
         image: "images/baking.jpg",
       },
       {
-        text: "Having a picnic and taking cute photos",
-        result: "strawberry",
-        image: "images/picnic.jpg",
+        text: "Going on a spontaneous adventure with friends",
+        result: "thai",
+        image: "images/adventure.jpg",
       },
       {
         text: "Catching up with friends at your favorite spot",
         result: "classic",
         image: "images/bookstore.jpg",
+      },
+      {
+        text: "Having a picnic and taking cute photos",
+        result: "strawberry",
+        image: "images/picnic.jpg",
       },
     ],
   },
@@ -38,19 +38,9 @@ const questions = [
     question: "Pick a color palette that matches your vibe.",
     answers: [
       {
-        text: "Pink, cream, and soft red",
-        result: "strawberry",
-        image: "images/pinkRed.jpg",
-      },
-      {
-        text: "Caramel, chocolate, and warm beige",
-        result: "brownSugar",
-        image: "images/caramelBeige.jpg",
-      },
-      {
-        text: "Sage green, white, and muted neutrals",
-        result: "matcha",
-        image: "images/sageGreen.jpg",
+        text: "Orange, amber, and golden yellow",
+        result: "thai",
+        image: "images/orangeAmber.jpg",
       },
       {
         text: "Lavender, lilac, and dreamy pastels",
@@ -58,9 +48,19 @@ const questions = [
         image: "images/lavender.jpg",
       },
       {
-        text: "Orange, amber, and golden yellow",
-        result: "thai",
-        image: "images/orangeAmber.jpg",
+        text: "Sage green, white, and muted neutrals",
+        result: "matcha",
+        image: "images/sageGreen.jpg",
+      },
+      {
+        text: "Caramel, chocolate, and warm beige",
+        result: "brownSugar",
+        image: "images/caramelBeige.jpg",
+      },
+      {
+        text: "Pink, cream, and soft red",
+        result: "strawberry",
+        image: "images/pinkRed.jpg",
       },
       {
         text: "Black, white, and timeless neutrals",
@@ -73,14 +73,9 @@ const questions = [
     question: "What's your role in your friend group?",
     answers: [
       {
-        text: "The energetic one who makes every plan exciting",
-        result: "thai",
-        image: "images/party.jpg",
-      },
-      {
-        text: "The comforting friend everyone goes to for advice",
-        result: "brownSugar",
-        image: "images/loveBear.jpg",
+        text: "The reliable one who keeps everyone connected",
+        result: "classic",
+        image: "images/planner.jpg",
       },
       {
         text: "The quiet observer who notices everything",
@@ -93,14 +88,19 @@ const questions = [
         image: "images/lightbulb.jpg",
       },
       {
+        text: "The comforting friend everyone goes to for advice",
+        result: "brownSugar",
+        image: "images/loveBear.jpg",
+      },
+      {
+        text: "The energetic one who makes every plan exciting",
+        result: "thai",
+        image: "images/party.jpg",
+      },
+      {
         text: "The affectionate friend who hypes everyone up",
         result: "strawberry",
         image: "images/smileFlower.jpg",
-      },
-      {
-        text: "The reliable one who keeps everyone connected",
-        result: "classic",
-        image: "images/planner.jpg",
       },
     ],
   },
@@ -108,14 +108,19 @@ const questions = [
     question: "How do you handle a stressful day?",
     answers: [
       {
-        text: "Call my friends and talk it all out",
-        result: "strawberry",
-        image: "images/phoneCall.jpg",
-      },
-      {
         text: "Get comfy and watch my favorite show",
         result: "brownSugar",
         image: "images/movie.jpg",
+      },
+      {
+        text: "Make a plan and tackle one thing at a time",
+        result: "classic",
+        image: "images/plan.jpg",
+      },
+      {
+        text: "Call my friends and talk it all out",
+        result: "strawberry",
+        image: "images/phoneCall.jpg",
       },
       {
         text: "Go for a walk and clear my mind",
@@ -132,11 +137,6 @@ const questions = [
         result: "thai",
         image: "images/games.jpg",
       },
-      {
-        text: "Make a plan and tackle one thing at a time",
-        result: "classic",
-        image: "images/plan.jpg",
-      },
     ],
   },
   {
@@ -148,9 +148,9 @@ const questions = [
         image: "images/strawberryCake.jpg",
       },
       {
-        text: "Crème brûlée",
-        result: "brownSugar",
-        image: "images/cremeBrulee.jpg",
+        text: "Mango sticky rice",
+        result: "thai",
+        image: "images/mangoRice.jpg",
       },
       {
         text: "Matcha cheesecake",
@@ -158,14 +158,14 @@ const questions = [
         image: "images/matchaCake.jpg",
       },
       {
+        text: "Crème brûlée",
+        result: "brownSugar",
+        image: "images/cremeBrulee.jpg",
+      },
+      {
         text: "Ube crinkle cookies",
         result: "taro",
         image: "images/cookie.jpg",
-      },
-      {
-        text: "Mango sticky rice",
-        result: "thai",
-        image: "images/mangoRice.jpg",
       },
       {
         text: "Vanilla bean panna cotta",
@@ -178,21 +178,6 @@ const questions = [
     question: "What's your biggest green flag in a friend?",
     answers: [
       {
-        text: "They make me laugh no matter what",
-        result: "thai",
-        image: "images/laughing.jpg",
-      },
-      {
-        text: "They make me feel safe and understood",
-        result: "brownSugar",
-        image: "images/hugCat.jpg",
-      },
-      {
-        text: "They respect my space and boundaries",
-        result: "matcha",
-        image: "images/cozyRoom.jpg",
-      },
-      {
         text: "They appreciate my weird little quirks",
         result: "taro",
         image: "images/silly.jpg",
@@ -203,9 +188,24 @@ const questions = [
         image: "images/loveHeart.jpg",
       },
       {
+        text: "They make me feel safe and understood",
+        result: "brownSugar",
+        image: "images/hugCat.jpg",
+      },
+      {
         text: "They're honest and always there for me",
         result: "classic",
         image: "images/shield.jpg",
+      },
+      {
+        text: "They respect my space and boundaries",
+        result: "matcha",
+        image: "images/cozyRoom.jpg",
+      },
+      {
+        text: "They make me laugh no matter what",
+        result: "thai",
+        image: "images/laughing.jpg",
       },
     ],
   },
@@ -213,24 +213,9 @@ const questions = [
     question: "Pick a weekend outfit!",
     answers: [
       {
-        text: "A bold top and statement shoes",
-        result: "thai",
-        image: "images/cherry.jpg",
-      },
-      {
-        text: "An oversized sweater and comfy jeans",
-        result: "brownSugar",
-        image: "images/sweaterCat.jpg",
-      },
-      {
-        text: "A clean, minimalist outfit with neutral colors",
-        result: "matcha",
-        image: "images/minimalist.jpg",
-      },
-      {
-        text: "A unique outfit with fun accessories",
-        result: "taro",
-        image: "images/accessories.jpg",
+        text: "A timeless tee, denim, and classic sneakers",
+        result: "classic",
+        image: "images/denim.jpg",
       },
       {
         text: "A cute skirt, pink accessories, and sneakers",
@@ -238,20 +223,30 @@ const questions = [
         image: "images/pinkGlasses.jpg",
       },
       {
-        text: "A timeless tee, denim, and classic sneakers",
-        result: "classic",
-        image: "images/denim.jpg",
+        text: "A unique outfit with fun accessories",
+        result: "taro",
+        image: "images/accessories.jpg",
+      },
+      {
+        text: "A bold top and statement shoes",
+        result: "thai",
+        image: "images/cherry.jpg",
+      },
+      {
+        text: "A clean, minimalist outfit with neutral colors",
+        result: "matcha",
+        image: "images/minimalist.jpg",
+      },
+      {
+        text: "An oversized sweater and comfy jeans",
+        result: "brownSugar",
+        image: "images/sweaterCat.jpg",
       },
     ],
   },
   {
     question: "What's your texting style?",
     answers: [
-      {
-        text: "Sends cute messages and lots of hearts",
-        result: "strawberry",
-        image: "images/loveLetter.jpg",
-      },
       {
         text: "Replies with thoughtful, reassuring paragraphs",
         result: "brownSugar",
@@ -261,6 +256,11 @@ const questions = [
         text: "Short replies, but always intentional",
         result: "matcha",
         image: "images/speechBubble.jpg",
+      },
+      {
+        text: "Replies consistently and gets straight to the point",
+        result: "classic",
+        image: "images/consistent.jpg",
       },
       {
         text: "Random thoughts and niche memes at 2 a.m.",
@@ -273,15 +273,30 @@ const questions = [
         image: "images/excited.jpg",
       },
       {
-        text: "Replies consistently and gets straight to the point",
-        result: "classic",
-        image: "images/consistent.jpg",
+        text: "Sends cute messages and lots of hearts",
+        result: "strawberry",
+        image: "images/loveLetter.jpg",
       },
     ],
   },
   {
     question: "Choose a love language.",
     answers: [
+      {
+        text: "Fun dates and exciting new experiences",
+        result: "thai",
+        image: "images/carousel.jpg",
+      },
+      {
+        text: "Thoughtful, personalized gifts",
+        result: "taro",
+        image: "images/gift.jpg",
+      },
+      {
+        text: "Acts of service and being there when it matters",
+        result: "classic",
+        image: "images/soup.jpg",
+      },
       {
         text: "Words of affirmation and sweet compliments",
         result: "strawberry",
@@ -297,30 +312,15 @@ const questions = [
         result: "matcha",
         image: "images/qualityTime.jpg",
       },
-      {
-        text: "Thoughtful, personalized gifts",
-        result: "taro",
-        image: "images/gift.jpg",
-      },
-      {
-        text: "Fun dates and exciting new experiences",
-        result: "thai",
-        image: "images/carousel.jpg",
-      },
-      {
-        text: "Acts of service and being there when it matters",
-        result: "classic",
-        image: "images/soup.jpg",
-      },
     ],
   },
   {
     question: "Pick your dream vacation!",
     answers: [
       {
-        text: "A lively city full of food, music, and nightlife",
-        result: "thai",
-        image: "images/cityNight.jpg",
+        text: "A whimsical town filled with art shops and hidden gems",
+        result: "taro",
+        image: "images/artGallery.jpg",
       },
       {
         text: "A cozy cabin with blankets and a fireplace",
@@ -328,14 +328,14 @@ const questions = [
         image: "images/cabin.jpg",
       },
       {
-        text: "A peaceful Japanese garden and a tea house",
-        result: "matcha",
-        image: "images/pond.jpg",
+        text: "A lively city full of food, music, and nightlife",
+        result: "thai",
+        image: "images/cityNight.jpg",
       },
       {
-        text: "A whimsical town filled with art shops and hidden gems",
-        result: "taro",
-        image: "images/artGallery.jpg",
+        text: "A classic city getaway with sightseeing and good food",
+        result: "classic",
+        image: "images/city.jpg",
       },
       {
         text: "A sunny beach with colorful sunsets",
@@ -343,16 +343,15 @@ const questions = [
         image: "images/sunsetBeach.jpg",
       },
       {
-        text: "A classic city getaway with sightseeing and good food",
-        result: "classic",
-        image: "images/city.jpg",
+        text: "A peaceful Japanese garden and a tea house",
+        result: "matcha",
+        image: "images/pond.jpg",
       },
     ],
   },
 ];
 
 // Possible results
-
 const results = {
   strawberry: {
     name: "Strawberry Milk Tea 🍓",
