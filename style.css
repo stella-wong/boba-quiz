@@ -167,9 +167,14 @@ button:disabled {
 }
 
 /* Results */
-.result-emoji {
-  margin: 24px 0;
-  font-size: 5rem;
+#result-image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  margin: 20px auto;
+  border-radius: 16px;
 }
 
 #result-description {
