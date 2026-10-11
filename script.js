@@ -394,7 +394,7 @@ const results = {
 
 // Track quiz state
 let currentQuestion = 0;
-let selectedResult = null;
+let userAnswers = [];
 let scores = {};
 
 // HTML elements
@@ -407,6 +407,7 @@ const progressPercent = document.getElementById("progress-percent");
 const progressBar = document.getElementById("progress-bar");
 const questionText = document.getElementById("question-text");
 const answerOptions = document.getElementById("answer-options");
+const backBtn = document.getElementById("back-btn");
 const nextBtn = document.getElementById("next-btn");
 
 // Start quiz
@@ -416,6 +417,7 @@ document.getElementById("start-btn").addEventListener("click", () => {
 
   currentQuestion = 0;
   scores = {};
+  userAnswers = [];
   showQuestion();
 });
 
@@ -423,7 +425,7 @@ document.getElementById("start-btn").addEventListener("click", () => {
 function showQuestion() {
   const question = questions[currentQuestion];
 
-  selectedResult = null;
+  backBtn.style.display = currentQuestion === 0 ? "none" : "";
   nextBtn.disabled = true;
   answerOptions.replaceChildren();
 
@@ -453,9 +455,16 @@ function showQuestion() {
     img.alt = answer.text;
     button.appendChild(img);
 
+    // Check if user has already chosen an answer (in the case of selecting back button)
+    if (userAnswers[currentQuestion] === answer.result) {
+      button.classList.add("selected");
+      button.setAttribute("aria-pressed", "false");
+      nextBtn.disabled = false;
+    }
+
     button.addEventListener("click", () => {
       // Select one answer at a time
-      selectedResult = answer.result;
+      userAnswers[currentQuestion] = answer.result;
 
       // Update selected appearance
       document.querySelectorAll(".answer-option").forEach((option) => {
@@ -476,13 +485,14 @@ function showQuestion() {
     currentQuestion === questions.length - 1 ? "Reveal my boba! 🧋" : "Next →";
 }
 
+// Go back to previous question
+backBtn.addEventListener("click", () => {
+  currentQuestion--;
+  showQuestion();
+});
+
 // Move to next question or show results
 nextBtn.addEventListener("click", () => {
-  if (!selectedResult) return;
-
-  // Add one point to the selected drink
-  scores[selectedResult] = (scores[selectedResult] || 0) + 1;
-
   if (currentQuestion < questions.length - 1) {
     currentQuestion++;
     showQuestion();
@@ -495,6 +505,12 @@ nextBtn.addEventListener("click", () => {
 function showResult() {
   quizScreen.classList.add("hidden");
   resultScreen.classList.remove("hidden");
+
+  userAnswers.forEach((answer) => {
+    if (answer) {
+      scores[answer] = (scores[answer] || 0) + 1;
+    }
+  });
 
   // Find the drink with the highest score
   const winningDrink = Object.keys(results).reduce((best, drink) => {
@@ -518,7 +534,7 @@ function showResult() {
 document.getElementById("restart-btn").addEventListener("click", () => {
   currentQuestion = 0;
   scores = {};
-  selectedResult = null;
+  userAnswers = [];
 
   resultScreen.classList.add("hidden");
   welcomeScreen.classList.remove("hidden");

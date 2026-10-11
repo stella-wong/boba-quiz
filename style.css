@@ -86,6 +86,22 @@ button:disabled {
   margin-top: 28px;
 }
 
+#next-btn {
+  margin-left: auto;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.navigation-buttons button {
+  margin-top: 0;
+}
+
 /* Progress bar */
 .progress-info {
   display: flex;
