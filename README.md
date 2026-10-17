@@ -35,4 +35,4 @@ Created as a fun front-end web development project to practice HTML, CSS, and Ja
 
 ---
 
-_Which boba drink matches your personality? Take the quiz (https://stellayuwong.github.io/boba-quiz/) and find out!_ 💗
+_Which boba drink matches your personality? Take the quiz (https://stella-wong.github.io/boba-quiz/) and find out!_ 💗
